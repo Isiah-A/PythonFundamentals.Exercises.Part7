@@ -110,7 +110,7 @@ def greet(name: str, greetings_options: Dict[int, str], lang_choice: int) -> Non
     :return:
     """
     var = greetings_options[lang_choice]
-    print(f"{var} " + name)
+    return print(f"{var} " + name)
 
 
 
