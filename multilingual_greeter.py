@@ -43,8 +43,8 @@ def language_input() -> int:
 
     :return: An integer representing the language choice made by the user
     """
-    name = int(input())
-    return name
+    lang = int(input())
+    return lang
 
 
 def language_choice_is_valid(lang_options: Dict[int, str], lang_choice: int) -> bool:
@@ -82,8 +82,10 @@ def get_name_input(name_prompt_options: Dict[int, str], lang_choice: int) -> str
     :param lang_choice: The language the user has chosen
     :return:
     """
-    name_prompt_options = input()
-    lang_choice = input()
+    var = name_prompt_options[lang_choice]
+    return var
+
+
 
 
 def name_input(name_prompt: str) -> str:
@@ -107,7 +109,8 @@ def greet(name: str, greetings_options: Dict[int, str], lang_choice: int) -> Non
     :param lang_choice: The language the user has chosen.
     :return:
     """
-    pass  # remove pass statement and implement me
+
+
 
 
 if __name__ == '__main__':
