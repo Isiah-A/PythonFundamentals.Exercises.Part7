@@ -109,7 +109,8 @@ def greet(name: str, greetings_options: Dict[int, str], lang_choice: int) -> Non
     :param lang_choice: The language the user has chosen.
     :return:
     """
-
+    var = greetings_options[lang_choice]
+    print(f"{var} " + name)
 
 
 
