@@ -83,7 +83,7 @@ def get_name_input(name_prompt_options: Dict[int, str], lang_choice: int) -> str
     :return:
     """
     var = name_prompt_options[lang_choice]
-    return var
+    print(var)
 
 
 
@@ -110,7 +110,7 @@ def greet(name: str, greetings_options: Dict[int, str], lang_choice: int) -> Non
     :return:
     """
     var = greetings_options[lang_choice]
-    return print(f"{var} " + name)
+    print(f"{var} " + name)
 
 
 
